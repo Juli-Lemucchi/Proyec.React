@@ -1,14 +1,11 @@
-import Header from "./Header.jsx"
-import Pie from "./Pie.jsx"
+import Header from "./componentes/Header.jsx"
+import Main from "./componentes/Main.jsx"
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <h2>home</h2>
-      </main>
-      <Pie/>
+      <Main/>
     </>
   )
 }
