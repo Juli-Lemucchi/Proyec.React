@@ -12,7 +12,7 @@ function App() {
         greeting="Bienvenido DinoLector" />
       <Main/>
     </>
-  )
+  ) 
 }
 
 export default App
