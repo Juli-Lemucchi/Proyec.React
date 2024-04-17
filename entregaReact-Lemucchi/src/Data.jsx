@@ -1,11 +1,11 @@
-export const libros= [
+export const Libros= [
     {
         id:1,
         title: "titulo",
         categoria:"Terror",
         description:"Descripcion ejemplo",
         precio:20000,
-        portada:"./img/libroPrueba.jpg"
+        portada:"../public/img/libroPrueba.jpg"
     },
     {
         id:2,
@@ -13,7 +13,7 @@ export const libros= [
         categoria:"Terror",
         description:"Descripcion ejemplo",
         precio:20000,
-        portada:"./img/libroPrueba.jpg"
+        portada:"../public/img/libroPrueba.jpg"
     },
     {
         id:3,
@@ -21,7 +21,7 @@ export const libros= [
         categoria:"Terror",
         description:"Descripcion ejemplo",
         precio:20000,
-        portada:"./img/libroPrueba.jpg"
+        portada:"../public/img/libroPrueba.jpg"
     },
     {
         id:4,
@@ -29,7 +29,7 @@ export const libros= [
         categoria:"Terror",
         description:"Descripcion ejemplo",
         precio:20000,
-        portada:"./img/libroPrueba.jpg"
+        portada:"../public/img/libroPrueba.jpg"
     },
     {
         id:5,
@@ -37,6 +37,6 @@ export const libros= [
         categoria:"Terror",
         description:"Descripcion ejemplo",
         precio:20000,
-        portada:"./img/libroPrueba.jpg"
+        portada:"../public/img/libroPrueba.jpg"
     }
 ]
