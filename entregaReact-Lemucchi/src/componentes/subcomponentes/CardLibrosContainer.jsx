@@ -9,15 +9,12 @@ function CardLibrosContainer() {
 
     useEffect(()=>{
 
-        fetch("https://rickandmortyapi.com/api/character")
+        fetch("./data.json")
         .then((res)=>{
             return res.json()
         })
         .then((res)=>{
             setLibros(res.results)
-            res.results.forEach((character)=>{
-                console.log(character)
-            })
         })
         .catch((err)=>{
             console.log(err);
@@ -37,12 +34,9 @@ function CardLibrosContainer() {
 
   return (
     <>
-    {libros.map((libro)=>{
-        return (
-        <CardLibros key={libro.id} 
-            cardLibro={libro}
-        />)
-    })}
+      {libros.map((libro)=>{
+          return (<CardLibros key={libro.id} cardLibro={libro}/>)
+      })}
     </>
   )
 }

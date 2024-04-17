@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "react-router-dom"
 
 function CardLibros(cardLibro) {
     
@@ -7,11 +8,11 @@ function CardLibros(cardLibro) {
   return (
     <div>
         <div className="card">
-            <img src={cardLibro.portada} alt={cardLibro.title} className="w-60"/>
-            <h2>{cardLibro.title}</h2>
-            <h3>{cardLibro.precio}</h3>
-            <h3>{cardLibro.id}</h3>
-      
+            <img src={portada} alt={title} className="w-60"/>
+            <h2>{title}</h2>
+            <h3>{precio}</h3>
+            <h3>{id}</h3>
+            <Link to={"/"*id}>Ver mas</Link>
         </div>
     </div>
   )
