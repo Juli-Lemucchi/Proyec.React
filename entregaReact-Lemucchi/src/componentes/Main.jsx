@@ -1,8 +1,9 @@
 import { Routes, Route} from "react-router-dom"
 import CardLibros from "./subcomponentes/CardLibros"
-import Home from "./pages/Home.jsx"
-import Libros from "./pages/Libros.jsx"
-import Usuario from "./pages/Usuario.jsx"
+import Home from "./pages/Home"
+import Libros from "./pages/Libros"
+import Libro from "./pages/Libro"
+import Usuario from "./pages/Usuario"
 
 function Main (){
     return( 
@@ -12,15 +13,15 @@ function Main (){
 
               <Routes>
 
-                <Route path="/" element={Home}/>
+                <Route path="/" element={<Home/>}/>
 
-                <Route path="/Libros" element={Libros}/>
+                <Route path="/Libros" element={<Libros/>}/>
 
-                <Route path="/Libros/:id" element={LibroContainer}/>
+                <Route path="/Libros/:id" element={<Libro/>}/>
 
-                <Route path="/Usuario" element={Usuario}/>
+                <Route path="/Usuario" element={<Usuario/>}/>
 
-                <Route path="*" element={alert("ERROR")}/>
+                {/*<Route path="*" element={alert("ERROR")}/>*/}
 
               </Routes>
 

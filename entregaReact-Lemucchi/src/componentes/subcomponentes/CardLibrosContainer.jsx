@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
 import CardLibros from './CardLibros'
-import { data } from "./data.jsx"
+import { libros } from "../../Libros"
 
 function CardLibrosContainer() {
     
@@ -9,7 +8,7 @@ function CardLibrosContainer() {
 
     useEffect(()=>{
 
-        fetch("./data.json")
+        /*fetch("/data.json")
         .then((res)=>{
             return res.json()
         })
@@ -18,23 +17,23 @@ function CardLibrosContainer() {
         })
         .catch((err)=>{
             console.log(err);
-        })
-        /*
+        })*/
+        
         const miPromesa = new Promise((res) => {
             setTimeout(() => {
-              res(data)
+              res(libros)
             }, 2000)
           })
           
           miPromesa.then((res)=>{
-            console.log(res)
-          })*/
+            setLibros(res)
+          })
     },[])
     
 
   return (
     <>
-      {libros.map((libro)=>{
+      {Libros.map((libro)=>{
           return (<CardLibros key={libro.id} cardLibro={libro}/>)
       })}
     </>
