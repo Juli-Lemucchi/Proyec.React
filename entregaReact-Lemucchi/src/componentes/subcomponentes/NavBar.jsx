@@ -1,15 +1,16 @@
+import { NavLink } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 function NavBar(){
-    return ( <div className="flex justify-end bg-red-300 p-4">
-        <nav>
-            <div className="items-center hidden md:flex md:gap-4 ">
-                <a href="#">Usuario</a>
-                <a href="#">Compras</a>
-                <a href="#">Comunidad</a>
-                <a href="#">
+    return ( <div className="h-[100dvh]">
+        <nav className="flex">
+            <div className=" flex-col md:flex md:gap-4 ">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/Categorias">Categorias</NavLink>
+                <NavLink to="/Favoritos">Favoritos</NavLink>
+                <NavLink to="/Carrito">
                     <CartWidget />
-                </a>
+                </NavLink>
             </div>
         </nav>
         </div>

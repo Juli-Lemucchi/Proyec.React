@@ -1,6 +1,4 @@
 function ItemListContainer(props) {
-  return (
-    alert(props.greeting)
-  )}
+  return }
 
 export default ItemListContainer;
