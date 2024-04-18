@@ -17,8 +17,6 @@ function Main (){
 
                 <Route path="/Libros/:id" element={<Libro/>}/>
 
-                
-
                 <Route path="/Usuario" element={<Usuario/>}/>
 
                 {/*<Route path="*" element={alert("ERROR")}/>*/}

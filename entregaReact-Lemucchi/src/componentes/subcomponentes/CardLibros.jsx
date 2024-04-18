@@ -1,23 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function CardLibros(props) {
+function CardLibros(libro) {
     
-    const {id, title, categoria, description, precio, portada} = props
+    const { id, title, portada } = libro
 
   return (
-    <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-30% h-40%">
-          <div className='card  w-100% h-100% bg-red-600'>
-                <div className="card-image">
+    <div className="p-4 transition rounded-md shadow-md user-card hover:scale-105 group bg-slate-300">
+            <div className="overflow-hidden aspect-video">
                 <img className="w-full transition-all duration-500 rounded-md grayscale group-hover:grayscale-0 group-hover:scale-150" 
-                src={portada} alt={title}/>
+                src={portada} alt="card image" />
             </div>
             <h2 className="my-2 font-bold">{title}</h2>
-            <h2>{categoria}</h2>
-            <h2>{description}</h2>
-            <h3>{precio}</h3>
             {/* <Button>ver mas</Button> */}
-            </div> 
-      </div>
+            <Link to={`/Libros/${id}`}>ver mas</Link>
+        </div>
   )
 }
 

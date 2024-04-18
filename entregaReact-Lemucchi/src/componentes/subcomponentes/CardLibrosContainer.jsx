@@ -26,7 +26,6 @@ function CardLibrosContainer() {
           })
           
           miPromesa.then((res)=>{
-            console.log(res)
             setLibros(res)
           })
     },[])
