@@ -10,8 +10,6 @@ function NavBar(){
 
                 <NavLink to="/Libros">Libros</NavLink>
 
-                
-
                 <NavLink to="/Usuario">Usuario</NavLink>
 
                 <NavLink to="/Carrito">
