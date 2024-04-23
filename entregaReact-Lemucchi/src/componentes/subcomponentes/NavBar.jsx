@@ -10,6 +10,10 @@ function NavBar(){
 
                 <NavLink to="/Libros">Libros</NavLink>
 
+                <NavLink to="/category/Terror">Terror</NavLink>
+
+                <NavLink to="/category/Fantasia">Fantasia</NavLink>
+
                 <NavLink to="/Usuario">Usuario</NavLink>
 
                 <NavLink to="/Carrito">

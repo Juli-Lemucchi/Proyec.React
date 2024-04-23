@@ -1,42 +1,42 @@
 [
     {
         "id":1,
-        "title": "titulo",
+        "title": "La casa de las sombras",
         "categoria":"Terror",
-        "description":"Descripcion ejemplo",
-        "precio":20000,
-        "portada":"./img/libroPrueba.jpg"
+        "description":"Catherine, tras superar un despedido injusto y el acoso en una cadena televisiva en Londres, comienza de nuevo. Le ofrecen catalogar la singular colección de muñecas y títeres antiguos de M.H. Mason, con representaciones sangrientas de la Gran Guerra. Invitada a la Red House, donde se resguarda la colección, Catherine enfrenta oscuros secretos detrás de las macabras exhibiciones. Visiones de Mason despiertan sombras de su pasado, desafiando su estabilidad mental. La trama oscila entre realidad, cordura y memoria, desenterrando verdades inquietantes. La novela explora la lucha de Catherine por enfrentar su pasado y descubrir horrores inimaginables.",
+        "precio":24000,
+        "portada":"./img/p_Libro1.jpg"
     },
     {
         "id":2,
-        "title": "titulo",
-        "categoria":"Terror",
-        "description":"Descripcion ejemplo",
-        "precio":20000,
-        "portada":"./img/libroPrueba.jpg"
+        "title": "Alicia En El País De Las Maravillas",
+        "categoria":"Fantasia",
+        "description":"una joven curiosa y aventurera, que cae por la madriguera de un conejo y se encuentra en un mundo fantástico y desconcertante. Este país de maravillas está habitado por personajes bizarros como el Conejo Blanco, el Sombrerero Loco, la Reina de Corazones, y el Gato de Cheshire, entre otros. A lo largo de su viaje, Alicia enfrenta una serie de desafíos y acertijos, que desafían su lógica y su percepción de la realidad. El País de las Maravillas es un lugar donde las reglas convencionales del tiempo, el espacio y la lógica no aplican, llevando a Alicia (y al lector) a cuestionar constantemente lo que se da por sentado en el mundo real.",
+        "precio":32000,
+        "portada":"./img/p_Libro2.webp"
     },
     {
         "id":3,
-        "title": "titulo",
-        "categoria":"Terror",
-        "description":"Descripcion ejemplo",
-        "precio":20000,
-        "portada":"./img/libroPrueba.jpg"
+        "title": "Las crónicas de Narnia: El león, la bruja y el armario",
+        "categoria":"Fantasia",
+        "description":"La emocionante aventura de cuatro jóvenes aventureros. Mientras juegan al escondite en la casa de campo de un anciano profesor, tropiezan por casualidad con un armario encantado que los transporta a lugares que jamás habrían soñado. Al cruzar el umbral del armario, abandonan el Londres de la Segunda Guerra Mundial y se sumergen en un espectacular universo paralelo conocido como Narnia",
+        "precio":37000,
+        "portada":"./img/p_Libro3.jpg"
     },
     {
         "id":4,
-        "title": "titulo",
+        "title": "Dispersión",
         "categoria":"Terror",
-        "description":"Descripcion ejemplo",
-        "precio":20000,
-        "portada":"./img/libroPrueba.jpg"
+        "description":"Reid nos cuenta la historia de Penny, una anciana que vive sola, sufre un accidente doméstico y cuando despierta se encuentra en la residencia Seis Cedros. Un lugar muy grande, pero que solo acoge a otros tres ancianos: Peter, Hilbert y Ruth. Penny se siente enseguida bien tratada y acogida pero hay varias cosas que la inquietan. Una novela al mismo tiempo compasiva y extraña, narrada con una prosa austera e hipnótica, mucho más que una novela de terror psicológico, ya que también aborda temas como la soledad en la tercera edad, el trauma y la propia identidad.",
+        "precio":25000,
+        "portada":"./img/p_Libro4.jpg"
     },
     {
         "id":5,
-        "title": "titulo",
+        "title": "Mi esposa y yo compramos un rancho",
         "categoria":"Terror",
-        "description":"Descripcion ejemplo",
-        "precio":20000,
-        "portada":"./img/libroPrueba.jpg"
+        "description":"Es una novela a dos voces, escrita por dos hermanos, que nació en la plataforma Reddit y tuvo un éxito sin precedentes. Narra la historia de una joven pareja, Harry y Sasha, y su perro, Dash, que dejan la bulliciosa ciudad para vivir en la casa de sus sueños, situada en una de las regiones más pintorescas del estado de Wyoming. Tras negarse a escuchar las supersticiones, una noche de primavera, empieza una serie de acontecimientos que les harán dudar de todo lo que hasta ahora creían conocer. Comenzará entonces una siniestra carrera de obstáculos en la que lo único que pueden hacer, si quieren sobrevivir, es seguir las viejas leyes que dicta el valle y escuchar a su intuición. Una novela de suspense y terror, en la que lo sobrenatural nos enfrenta a nuestros miedos, que muestra facetas desconocidas del folclore estadounidense y que acaba con un final redondo.",
+        "precio":35000,
+        "portada":"./img/p_Libro5.jpg"
     }
 ]

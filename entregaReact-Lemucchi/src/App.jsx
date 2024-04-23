@@ -3,7 +3,7 @@ import Header from "./componentes/Header.jsx"
 import { Routes, Route} from "react-router-dom"
 import Home from "./componentes/pages/Home"
 import Libros from "./componentes/pages/Libros"
-import Libro from "./componentes/pages/Libro"
+import LibroDetalle from "./componentes/pages/LibroDetalle.jsx"
 import Usuario from "./componentes/pages/Usuario.jsx"
 
 
@@ -18,7 +18,9 @@ function App() {
 
                 <Route path="/Libros" element={<Libros/>}/>
 
-                <Route path="/Libros/:id" element={<Libro/>}/>
+                <Route path="/Libros/:id" element={<LibroDetalle/>}/>
+
+                <Route path="category/:categoria" element={<Libros/>}/>
 
                 <Route path="/Usuario" element={<Usuario/>}/>
 

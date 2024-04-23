@@ -1,28 +1,72 @@
-import React from 'react'
-import { useParams, useState, useEffect } from 'react-router-dom'
-import Libro from "./Libro"
+import {  useState, useEffect  } from 'react'
+import { useParams } from 'react-router-dom'
+import LibroDetalle from './LibroDetalle';
 
 
-function Libro() {
 
-    const { id } = useParams()
-    
-    const [libro, setLibro] = useState({})
+function LibroContainer() {
+
+        const { id } = useParams();
+        const [libro, setLibro] = useState({})
+        
 
     useEffect(() => {
-        fetch("./data.json" + id)
+        
+        let pedido
+        pedido.fetch("./data.json") 
+        pedido.then((res)=>{
+            return res.json()
+        })
+        pedido.then(res=>{
+            const libros = res ;
+            const libroFiltrados = libros.find(item => item.id === id);
+            console.log(libroFiltrados)
+            setLibro(libroFiltrados)
+        })
+        pedido.catch(err=>{
+            console.log(err)
+        })
+
+
+
+
+
+        {/*let ped;
+        ped.fetch("./data.json")
+            ped.then((res)=>{
+                return res.json()
+            })
+            ped.then((libro)=>{
+                setLibro(libro)
+            })
+            ped.catch((err)=>{
+                console.log(err)
+            })
+        const libroEleg = ped.filter(item => item.id === id);
+            console.log(libroEleg)
+
+
+
+        fetch("./data.json/" + id)
             .then((res) => {
                 return res.json()
             })
-            .then((libro) => {
-                setLibro(libro)
+
+            .then((res) => {
+                setLibro(res)
             })
+
+            .catch((err)=>{
+                console.log(err)
+            })
+        */}
 
     }, []);
 
     return (
         <div>
-            <Libro libro={libro} />
+            <p>aaa</p>
+            <LibroDetalle libro={libro}/>
         </div>
     )
 
