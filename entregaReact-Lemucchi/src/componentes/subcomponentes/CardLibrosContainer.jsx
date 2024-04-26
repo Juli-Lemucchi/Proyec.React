@@ -1,34 +1,36 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom"
-import Libros from "./pages./Libros.jsx";
+import { useParams } from "react-router-dom"
+import Libros from "../pages/Libros";
+import data from "../data.json";
 
 function CardLibrosContainer() {
       
 
     const [libros, setLibros] = useState([]);
-    const params = useParams()
-    
+    const category = useParams().categoria 
+
+
+    const pedido = () => {
+      return new Promise((resolve, reject) => {
+          setTimeout( () => {
+              resolve(data);
+          }, 500)
+      })
+    }
+
 
 useEffect(() => {
+  pedido()
+      .then((res) => {
+          if (category){
+            setLibros( res.filter((libro) => libro.categoria === category) );
+          } else {
+            setLibros(res);
+          }
+      })
+}, [category])
 
-  let pedido;
-  if(params.categoria){
-    pedido.fetch("./data.json"+params.categoria)
-  }else{
-    pedido.fetch("./data.json")
-  }
-  pedido.then((response) => {
-      return response.json();
-    })
-  pedido.then((data) => {
-      setLibros(data);
-    })
-  pedido.catch((error) => {
-    console.error("Error busqueda libros:", error);
-    });
-  
-  }, [params.categoria]);
-  console.log(libros)
+
 return (
 
 <> {libros.map((libros) => {
@@ -39,6 +41,7 @@ return (
 
 
 export default CardLibrosContainer
+
 
 
 

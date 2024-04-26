@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import CartWidget from "./CartWidget"
 
 function NavBar(){
@@ -6,19 +6,19 @@ function NavBar(){
         <nav className="flex">
             <div className=" flex-col md:flex md:gap-4 ">
 
-                <NavLink to="/">Home</NavLink>
+                <Link to="/">Home</Link>
 
-                <NavLink to="/Libros">Libros</NavLink>
+                <Link to="/Libros">Libros</Link>
 
-                <NavLink to="/category/Terror">Terror</NavLink>
+                <Link to="/category/Terror">Terror</Link>
 
-                <NavLink to="/category/Fantasia">Fantasia</NavLink>
+                <Link to="/category/Fantasia">Fantasia</Link>
 
-                <NavLink to="/Usuario">Usuario</NavLink>
+                <Link to="/Usuario">Usuario</Link>
 
-                <NavLink to="/Carrito">
+                <Link to="/Carrito">
                     <CartWidget />
-                </NavLink>
+                </Link>
             </div>
         </nav>
         </div>

@@ -2,9 +2,9 @@ import { BrowserRouter } from "react-router-dom"
 import Header from "./componentes/Header.jsx"
 import { Routes, Route} from "react-router-dom"
 import Home from "./componentes/pages/Home"
-import Libros from "./componentes/pages/Libros"
-import LibroDetalle from "./componentes/pages/LibroDetalle.jsx"
 import Usuario from "./componentes/pages/Usuario.jsx"
+import DetalleContainer from "./componentes/subcomponentes/DetalleContainer.jsx"
+import CardLibrosContainer from "./componentes/subcomponentes/CardLibrosContainer.jsx"
 
 
 
@@ -16,15 +16,13 @@ function App() {
 
                 <Route path="/" element={<Home/>}/>
 
-                <Route path="/Libros" element={<Libros/>}/>
+                <Route path="/Libros" element={<CardLibrosContainer/>}/>
 
-                <Route path="/Libros/:id" element={<LibroDetalle/>}/>
+                <Route path="Libro/:id" element={<DetalleContainer/>}/>
 
-                <Route path="category/:categoria" element={<Libros/>}/>
+                <Route path="category/:categoria" element={<CardLibrosContainer/>}/>
 
                 <Route path="/Usuario" element={<Usuario/>}/>
-
-                {/*<Route path="*" element={alert("ERROR")}/>*/}
 
               </Routes>
     </BrowserRouter>
