@@ -5,33 +5,36 @@ import data from "../data.json";
 import Libro from '../pages/Detalle';
 
 
-function DetalleContainer() {
+function DetalleContainer(props) {
 
-    const {libro, setLibro}= useState([]);
+    const [libro, setLibro]= useState([]);
     const id = useParams().id;
 
     const pedirPorID = () => {
         return new Promise((resolve, reject) => {
             setTimeout( () => {
-                resolve(data.id);
-            }, 500)
+                resolve(data);
+            }, 500) 
         })
     }
+    
 useEffect(()=>{
     pedirPorID()
-    .then((res)=>{
-        if(id){
-            setLibro(res.find((libro)=> libro.id===  id ))
-        }
-    })
-})    
+        .then((res)=>{
+            if(id){
+                setLibro(res.filter((libro)=> libro.id === id));
+                 
+            }
+         })
+         console.log(setLibro())
+},[])   
 
     
   return (
-    <>{libro.map((libro)=>{
-        return <Libro key={libro.id} libro={libro}/>
-    })}
-      
+    <><div>
+        <Libro libro={libro}/>
+        
+    </div>
     </>
   )
 }

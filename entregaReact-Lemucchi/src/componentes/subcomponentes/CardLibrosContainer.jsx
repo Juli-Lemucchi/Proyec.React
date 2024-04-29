@@ -13,7 +13,7 @@ function CardLibrosContainer() {
     const pedido = () => {
       return new Promise((resolve, reject) => {
           setTimeout( () => {
-              resolve(data);
+              resolve(data); 
           }, 500)
       })
     }
