@@ -18,9 +18,9 @@ function App() {
 
                 <Route path="/Libros" element={<CardLibrosContainer/>}/>
 
-                <Route path="Libros/:id" element={<DetalleContainer/>}/>
+                <Route path="/Libros/:id" element={<DetalleContainer/>}/>
 
-                <Route path="category/:categoria" element={<CardLibrosContainer/>}/>
+                <Route path="/category/:categoria" element={<CardLibrosContainer/>}/>
 
                 <Route path="/Usuario" element={<Usuario/>}/>
 

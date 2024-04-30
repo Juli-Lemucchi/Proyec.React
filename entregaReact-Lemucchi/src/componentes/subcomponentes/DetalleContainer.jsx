@@ -8,7 +8,7 @@ import Libro from '../pages/Detalle';
 function DetalleContainer(props) {
 
     const [libro, setLibro]= useState([]);
-    const id = useParams().id;
+    const id = useParams();
 
     const pedirPorID = () => {
         return new Promise((resolve, reject) => {
@@ -23,17 +23,18 @@ useEffect(()=>{
         .then((res)=>{
             if(id){
                 setLibro(res.filter((libro)=> libro.id === id));
-                 
+            }else{
+                console.log("uhh")
             }
          })
-         console.log(setLibro())
+         
 },[])   
 
     
   return (
     <><div>
         <Libro libro={libro}/>
-        
+        {libro.title}
     </div>
     </>
   )

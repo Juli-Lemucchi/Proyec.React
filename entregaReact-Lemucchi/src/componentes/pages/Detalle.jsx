@@ -1,10 +1,9 @@
 import React from 'react'
 
-function Libro({props}) {
+function Libro({libro}) {
 
   return (
-    <p>aaa
-      {}
+    <p>{libro.precio}
     </p>
     
   )
