@@ -2,13 +2,13 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import data from "../data.json";
-import Libro from '../pages/Detalle';
+import LibroDetalle from '../pages/LibroDetalle';
 
 
-function DetalleContainer(props) {
+function DetalleContainer() {
 
     const [libro, setLibro]= useState([]);
-    const id = useParams();
+    const {id} = useParams();
 
     const pedirPorID = () => {
         return new Promise((resolve, reject) => {
@@ -22,19 +22,18 @@ useEffect(()=>{
     pedirPorID()
         .then((res)=>{
             if(id){
-                setLibro(res.filter((libro)=> libro.id === id));
+                setLibro(res.find(libro => libro.id === parseInt(id)));
             }else{
-                console.log("uhh")
+                console.log(res)
             }
          })
          
-},[])   
+},[id])   
 
     
   return (
     <><div>
-        <Libro libro={libro}/>
-        {libro.title}
+        <LibroDetalle libro={libro}/>
     </div>
     </>
   )
