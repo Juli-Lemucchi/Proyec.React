@@ -20,3 +20,8 @@ Es una página que simula una librería, dando al usuario la oportunidad de comp
 
 
 ###### Lemucchi Julieta. Proyecto React
+
+
+![alt text](./img/image.png)
+![alt text](./img/image-1.png)
+![alt text](./img/image-3.png)
