@@ -14,9 +14,7 @@ function NavBar(){
 
                 <Link to="/category/Fantasia">Fantasia</Link>
 
-                <Link to="/Usuario">Usuario</Link>
-
-                <Link to="/Carrito">
+                <Link to="/carrito">
                     <CartWidget />
                 </Link>
             </div>
